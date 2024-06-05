@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
 </head>
+
 <body>
     <h1 id="titulo">Esse é o título</h1>
     <p id="texto">Esse aqui é o meu texto</p>
-    <button>Estilo 1</button>
-    <button>Estilo 2</button>
+    <button type="button" onclick="mudar()">Estilo 1</button>
+    <button type="button" onclick="mudar2()">Estilo 2</button>
+    <button type="button" onclick="mudar3()">Estilo 3</button>
+    <button type="button" onclick="mudar4()">Estilo 4</button>
 
     <script>
-        document.write("começando com <strong>js</strong>")
-        alert("Seja bem vindo")
-
-        let nome = prompt("Informe seu nome")
-
-        document.write(" " + nome)
-
-        alert("Seja bem vindo " + nome + " espero que goste do site")
-
-        document.body.style.backgroundColor = "green"
-        document.getElementById("titulo").innerText = "Mudado com JS"
+        function mudar() {
+            alert("Seja bem vindo")
+            let nome = prompt("Informe seu nome")
+            alert("Seja bem vindo " + nome + " espero que goste do site")
+            document.body.style.backgroundColor = "green"
+            document.getElementById("titulo").innerText = "Mudado com JS"
+        }
+        function mudar2() {
+            document.body.style.background = "#0000ff"
+            document.body.style.color = "white"
+        }
+        function mudar3(){
+            document.body.style.background = "red"
+            let idade = prompt("Informe sua idade")
+        }
+        function mudar4(){
+            document.body.style.background = "blue"
+            alert("Tela Azul")
+        }
     </script>
 </body>
+
 </html>
